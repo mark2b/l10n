@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'l10n_Example' do
+  pod 'l10n', :path => '../'
+
+  target 'l10n_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
