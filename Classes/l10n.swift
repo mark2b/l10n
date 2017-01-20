@@ -8,24 +8,27 @@ import Foundation
 
 extension String {
     
-    public func l10n(_ resource: l10NResources.RawValue = l10NResources.default, args:CVarArg...) -> String {
-        if resource == l10NResources.default {
-            let format = Bundle.main.localizedString(forKey: self, value: self, table: nil)
-            if args.count == 0 {
-                return format
-            }
-            else {
-                return NSString(format: format, arguments:getVaList(args)) as String
+    public func l10n(_ resource: l10NResources.RawValue = l10NResources.default, locale:Locale? = nil, args:CVarArg...) -> String {
+        var bundle = Bundle.main
+        if let locale = locale {
+            let language = locale.languageCode
+            if let path = Bundle.main.path(forResource: language, ofType: "lproj"), let localizedBundle = Bundle(path: path) {
+                bundle = localizedBundle
             }
         }
+
+        var format:String
+        if resource == l10NResources.default {
+            format = bundle.localizedString(forKey: self, value: self, table: nil)
+        }
         else {
-            let format = Bundle.main.localizedString(forKey: self, value: self, table: resource)
-            if args.count == 0 {
-                return format
-            }
-            else {
-                return NSString(format: format, arguments:getVaList(args)) as String
-            }
+            format = bundle.localizedString(forKey: self, value: self, table: resource)
+        }
+        if args.count == 0 {
+            return format
+        }
+        else {
+            return NSString(format: format, arguments:getVaList(args)) as String
         }
     }
 }

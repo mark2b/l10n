@@ -21,22 +21,15 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/l10n'
+  s.homepage         = 'https://github.com/mark2b/l10n'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Mark Berner' => 'mark2b@gmail.com' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/l10n.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'https://github.com/mark2b/l10n.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'l10n/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'l10n' => ['l10n/Assets/*.png']
-  # }
+  s.source_files = 'Classes/**/*'
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

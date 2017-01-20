@@ -7,3 +7,10 @@
 //
 
 import Foundation
+import l10n
+
+extension l10NResources {
+    public static let vc1 = "ViewController"
+}
+
+typealias l = l10NResources

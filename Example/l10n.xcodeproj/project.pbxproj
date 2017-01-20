@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		42BA566FB94E84CEC3B1EC5E /* Pods_l10n_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBCDA4BAF4B166C74C34C9A7 /* Pods_l10n_Example.framework */; };
+		5D7738B21E314702006D7549 /* project-l10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7738B11E314702006D7549 /* project-l10n.swift */; };
+		5DA2346F1E32C8D9003ED7CA /* l10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2346E1E32C8D9003ED7CA /* l10n.swift */; };
+		5DA234781E32C971003ED7CA /* ViewController.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5DA2347A1E32C971003ED7CA /* ViewController.strings */; };
+		5DA2347F1E32CFED003ED7CA /* Localized.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5DA2347E1E32CFED003ED7CA /* Localized.strings */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -29,8 +33,18 @@
 
 /* Begin PBXFileReference section */
 		04181E379044694389203E9A /* Pods-l10n_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-l10n_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-l10n_Tests/Pods-l10n_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		2FC4805F247D04D5F2D898D1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		3B8C2EBE6575B891ADC825DA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		2FC4805F247D04D5F2D898D1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		3B8C2EBE6575B891ADC825DA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		5D7738B11E314702006D7549 /* project-l10n.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "project-l10n.swift"; sourceTree = "<group>"; };
+		5DA2346E1E32C8D9003ED7CA /* l10n.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = l10n.swift; sourceTree = "<group>"; };
+		5DA234751E32C961003ED7CA /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		5DA234771E32C968003ED7CA /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		5DA234791E32C971003ED7CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/ViewController.strings; sourceTree = "<group>"; };
+		5DA2347C1E32C975003ED7CA /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/ViewController.strings; sourceTree = "<group>"; };
+		5DA2347D1E32C976003ED7CA /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/ViewController.strings; sourceTree = "<group>"; };
+		5DA2347E1E32CFED003ED7CA /* Localized.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localized.strings; sourceTree = "<group>"; };
+		5DA234821E32D70F003ED7CA /* zh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh; path = zh.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		5DA234831E32D70F003ED7CA /* zh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh; path = zh.lproj/ViewController.strings; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* l10n_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = l10n_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,7 +57,7 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		71A866739D67C296FB93F416 /* Pods-l10n_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-l10n_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-l10n_Example/Pods-l10n_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		8F5C34303F50F21F4A0868FE /* Pods-l10n_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-l10n_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-l10n_Example/Pods-l10n_Example.release.xcconfig"; sourceTree = "<group>"; };
-		9634D0139218379C44D3DABA /* l10n.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = l10n.podspec; path = ../l10n.podspec; sourceTree = "<group>"; };
+		9634D0139218379C44D3DABA /* l10n.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = l10n.podspec; path = ../l10n.podspec; sourceTree = "<group>"; };
 		9C6BDFE715CD8708EAAA9090 /* Pods-l10n_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-l10n_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-l10n_Tests/Pods-l10n_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		AC9D58B4FE9C3175ED25EDD3 /* Pods_l10n_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_l10n_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBCDA4BAF4B166C74C34C9A7 /* Pods_l10n_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_l10n_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,7 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
-				607FACD21AFB9204008FA782 /* Example for l10n */,
+				607FACD21AFB9204008FA782 /* Example */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				DE3F54251819FA4170A45BDF /* Pods */,
@@ -90,7 +104,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		607FACD21AFB9204008FA782 /* Example for l10n */ = {
+		607FACD21AFB9204008FA782 /* Example */ = {
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
@@ -99,8 +113,12 @@
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				5D7738B11E314702006D7549 /* project-l10n.swift */,
+				5DA2346E1E32C8D9003ED7CA /* l10n.swift */,
+				5DA2347A1E32C971003ED7CA /* ViewController.strings */,
+				5DA2347E1E32CFED003ED7CA /* Localized.strings */,
 			);
-			name = "Example for l10n";
+			name = Example;
 			path = l10n;
 			sourceTree = "<group>";
 		};
@@ -215,9 +233,11 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						LastSwiftMigration = 0820;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						LastSwiftMigration = 0820;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
@@ -229,6 +249,9 @@
 			knownRegions = (
 				en,
 				Base,
+				he,
+				ru,
+				zh,
 			);
 			mainGroup = 607FACC71AFB9204008FA782;
 			productRefGroup = 607FACD11AFB9204008FA782 /* Products */;
@@ -246,7 +269,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DA2347F1E32CFED003ED7CA /* Localized.strings in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				5DA234781E32C971003ED7CA /* ViewController.strings in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
@@ -359,8 +384,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DA2346F1E32C8D9003ED7CA /* l10n.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				5D7738B21E314702006D7549 /* project-l10n.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +410,17 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		5DA2347A1E32C971003ED7CA /* ViewController.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DA234791E32C971003ED7CA /* Base */,
+				5DA2347C1E32C975003ED7CA /* he */,
+				5DA2347D1E32C976003ED7CA /* ru */,
+				5DA234831E32D70F003ED7CA /* zh */,
+			);
+			name = ViewController.strings;
+			sourceTree = "<group>";
+		};
 		607FACD91AFB9204008FA782 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -395,6 +433,9 @@
 			isa = PBXVariantGroup;
 			children = (
 				607FACDF1AFB9204008FA782 /* Base */,
+				5DA234751E32C961003ED7CA /* he */,
+				5DA234771E32C968003ED7CA /* ru */,
+				5DA234821E32D70F003ED7CA /* zh */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -406,6 +447,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -451,6 +493,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -494,6 +537,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -507,6 +551,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -526,6 +571,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -541,6 +587,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
