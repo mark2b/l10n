@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'l10n'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of l10n.'
+  s.summary          = 'String extension provides convenient way for strings localization'
   s.description      = <<-DESC
 String extension provides convenient way for strings localization
                        DESC
