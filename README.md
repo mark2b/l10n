@@ -5,12 +5,12 @@
 [![License](https://img.shields.io/cocoapods/l/l10n.svg?style=flat)](http://cocoapods.org/pods/l10n)
 [![Platform](https://img.shields.io/cocoapods/p/l10n.svg?style=flat)](http://cocoapods.org/pods/l10n)
 
-**l10n** convinient way produce localized strings
+**l10n** String extension provides convenient way for strings localization
 ```swift
 
-"Hello, World !!!".l10n()
-"Hello, World !!!".l10n(l.vc1)
-"Hello, %@ !!!".l10n(args:"Me")
+"Hello, World !!!".l10n()               // Looks for "Hello, World !!!" key in the Localized.strings 
+"Hello, World !!!".l10n(l.vc1)          // Looks for "Hello, World !!!" key in the ViewController.strings (mapped via l10NResources)
+"Hello, %@ !!!".l10n(args:"Me")         // Looks for "Hello, %@ !!!" key in the Localized.strings and replace '%@' by argument
 "Hello, %@ !!!".l10n(l.vc1, args:"Me")
 
 extension l10nResources {
