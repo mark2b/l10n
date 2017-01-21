@@ -8,21 +8,13 @@
 
 Pod::Spec.new do |s|
   s.name             = 'l10n'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.summary          = 'A short description of l10n.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+String extension provides convenient way for strings localization
                        DESC
 
   s.homepage         = 'https://github.com/mark2b/l10n'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Mark Berner' => 'mark2b@gmail.com' }
   s.source           = { :git => 'https://github.com/mark2b/l10n.git', :tag => s.version.to_s }
