@@ -9,12 +9,15 @@
 ```swift
 
 "Hello, World !!!".l10n()               // Looks for "Hello, World !!!" key in the Localized.strings 
-"Hello, World !!!".l10n(l.vc1)          // Looks for "Hello, World !!!" key in the ViewController.strings (mapped via l10NResources)
-"Hello, %@ !!!".l10n(args:"Me")         // Looks for "Hello, %@ !!!" key in the Localized.strings and replace '%@' by argument
+"Hello, World !!!".l10n(l.vc1)          // Looks for "Hello, World !!!" key in the
+                                        // ViewController1.strings (mapped via l10NResources)
+"Hello, %@ !!!".l10n(args:"Me")         // Looks for "Hello, %@ !!!" key in the Localized.strings
+                                        // and replace '%@' by argument
 "Hello, %@ !!!".l10n(l.vc1, args:"Me")
 
 extension l10nResources {
-    public static let vc1 = "ViewController"
+    public static let vc1 = "ViewController1"
+    public static let vc2 = "ViewController2"
 }
 typealias l = l10NResources
 
