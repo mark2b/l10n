@@ -5,6 +5,20 @@
 [![License](https://img.shields.io/cocoapods/l/l10n.svg?style=flat)](http://cocoapods.org/pods/l10n)
 [![Platform](https://img.shields.io/cocoapods/p/l10n.svg?style=flat)](http://cocoapods.org/pods/l10n)
 
+**l10n** convinient way produce localized strings
+```swift
+
+"Hello, World !!!".l10n()
+"Hello, World !!!".l10n(l.vc1)
+"Hello, %@ !!!".l10n(args:"Me")
+"Hello, %@ !!!".l10n(l.vc1, args:"Me")
+
+extension l10nResources {
+    public static let vc1 = "ViewController"
+}
+typealias l = l10NResources
+
+```
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
