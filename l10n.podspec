@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'l10n'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'String extension provides convenient way for strings localization'
   s.homepage         = 'https://github.com/mark2b/l10n'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
