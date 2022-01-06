@@ -18,9 +18,6 @@ let package = Package(
         .target(
             name: "l10n",
             path: "Classes",
-            exclude: [
-                "Info.plist",
-            ]
         ),
     ]
 )
